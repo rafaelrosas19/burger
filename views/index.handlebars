@@ -1,31 +1,57 @@
-<h1>Burger App</h1>
-
-<h2>Burgers you can eat</h2>
-<h3 class="submitFont">Eat Me!</h3>
-<div id="burgersAvailable">
-    {{#each burgers}} {{#unless devoured}}
-    {{> burgers/burger-block}}
-    {{/unless}} {{/each}}
+<div class="row">
+    <div class="col-12 d-flex justify-content-center">
+        <h1 class="header">Eat da Burger!</h1>
+    </div>
 </div>
 
-<h2>Burgers we've eaten</h2>
+<br>
+<br>
+<br>
+<br>
 
-<ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    <li>
-        {{burger_name}}
-        <button class="delete-burger" data-id="{{this.id}}">Delete!</button>
-    </li>
-    {{/if}}
-    {{/each}}
-</ul>
+<div class="container">
+    <div class="row">
 
-<h2>Add another burger?</h2>
-<form class="create-form">
-    <div class="form-group">
-        <label for="newBurger">Burger Name:</label>
-        <input type="text" id="newBurger" name="name">
+        <div class="col-sm-4">
+            <h2 class="title">Burgers you can eat</h2>
+            <p></p>
+            <div id="burgersAvailable" class="text">
+                {{#each burgers}} {{#unless devoured}}
+                {{> burgers/burger-block}}
+                {{/unless}} {{/each}}
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <h2 class="title">Add another burger?</h2>
+            <form class="create-form">
+                <div class="form-group">
+                    <label for="newBurger" class="title">Burger Name:</label>
+                    <input type="text" id="newBurger" name="name">
+                </div>
+                <button type="submit" class="btn btn-success">Add burger</button>
+            </form>
+        </div>
+        <div class="col-sm-4">
+            <h2 class="title">Burgers you've eaten</h2>
+            <div class="text">
+                {{#each burgers}}
+                {{#if devoured}}
+                <li>
+                    {{burger_name}}
+                    <button class="delete-burger btn btn-outline-danger" data-id="{{this.id}}">Delete Burger</button>
+                </li>
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+
+
     </div>
-    <button type="submit">Add burger</button>
-</form>
+
+
+
+
+
+
+
+</div>

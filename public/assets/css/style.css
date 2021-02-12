@@ -1,3 +1,7 @@
+body {
+  background-image: url("../burger.jpeg");
+}
+
 li {
   padding: 5px;
   margin: 5px;
@@ -16,4 +20,19 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+.header {
+  justify-content: center;
+  color: #faebd7;
+  font-size: 100px;
+}
+.title {
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-size: 40px;
+}
+.text {
+  font-size: medium;
+  font-weight: bold;
 }
