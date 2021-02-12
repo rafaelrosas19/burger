@@ -12,4 +12,6 @@ To install this respository you will need MySQL, Node, Express, and Handlebars i
 
 ## Usage
 
+https://safe-bayou-77947.herokuapp.com/
+
 To run the application make sure that you are in the root directory and use your integrated terminal to type `node server.js`. Once you have the application running, you can type the name of the burgers you would like to try. These burgers will be saved on the left hand side of your application and once you "Eat da burger" they will be transferred to the right hand side. You also have the ability to delete burgers that you have already eaten.
