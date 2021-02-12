@@ -8,7 +8,7 @@ This application is a burger logger that uses MySQL, Node, Express, Handlebars, 
 
 To install this respository you will need MySQL, Node, Express, and Handlebars installed on your local machine using npm install.
 
-![](/assets/burgerscreen.png)
+![](public/assets/burgerscreen.png)
 
 ## Usage
 
